@@ -15,7 +15,7 @@ echo ">>> build project"
 npm run build
 
 echo ">>> copy build results to web root directory ***"
-mv -rf ./build/* ./
+mv -f ./build/* ./
 
 echo ">>> remove template files & directories ********"
 rm -rf build src scripts
