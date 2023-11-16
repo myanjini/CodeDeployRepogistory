@@ -8,7 +8,7 @@ import Login from './board/Login';
 function App() {
   return (
     <>
-      <Link to="/login">로그인</Link>
+      <Link to="/login">로그인2</Link>
       &nbsp;|&nbsp;
       <Link to="/board">게시판</Link>
       <hr/>
