@@ -14,3 +14,6 @@ mv ./build/* ./
 
 echo ">>> remove template files & directories"
 rm -rf build src scripts
+
+echo '>>> change owner to ubuntu'
+chown -R ubuntu /var/www/html
