@@ -3,17 +3,27 @@
 cd /var/www/html
 sudo mkdir build
 
-echo ">>> install node modules"
+echo "*********************************"
+echo "BEFORE"
+ls -l
+echo "*********************************"
+
+echo ">>> install node modules ***********************"
 npm install
 
 echo ">>> build project"
 npm run build
 
-echo ">>> copy build results to web root directory"
+echo ">>> copy build results to web root directory ***"
 mv -rf ./build/* ./
 
-echo ">>> remove template files & directories"
+echo ">>> remove template files & directories ********"
 rm -rf build src scripts
 
-echo '>>> change owner to ubuntu'
+echo "*********************************"
+echo "AFTER"
+ls -l
+echo "*********************************"
+
+echo '>>> change owner to ubuntu *********************'
 chown -R ubuntu /var/www/html
