@@ -1,4 +1,10 @@
+#!/bin/bash
+
+cd /var/www/html
+sudo mkdir build
+
 pwd
+ls *
 
 echo "install node modules"
 npm install
