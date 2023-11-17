@@ -13,7 +13,8 @@ echo ">>> copy build results to web root directory ***"
 mv -f ./build/* ./
 
 echo ">>> remove template files & directories ********"
-rm -rf build src scripts
+# rm -rf build src scripts
+rm -rf scripts appspec.yml
 
 echo '>>> change owner to ubuntu *********************'
 chown -R ubuntu /var/www/html
