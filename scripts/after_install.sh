@@ -1,13 +1,13 @@
 #!/bin/bash
 
 cd /var/www/html
-sudo mkdir build
+# sudo mkdir build
 
-echo ">>> install node modules ***********************"
-npm install
+# echo ">>> install node modules ***********************"
+# npm install
 
-echo ">>> build project"
-npm run build
+# echo ">>> build project"
+# npm run build
 
 echo ">>> copy build results to web root directory ***"
 mv -f ./build/* ./
