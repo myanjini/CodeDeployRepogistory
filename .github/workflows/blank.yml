@@ -27,11 +27,11 @@ jobs:
       with:
         node-version: 18.x
                 
-    - name: npm clean & install
-      run: npm clean-install
+    - name: npm install
+      run: npm install
       
     - name: npm build
-      run: npm run build --if-present
+      run: npm run build
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
