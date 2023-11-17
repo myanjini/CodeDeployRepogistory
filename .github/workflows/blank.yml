@@ -34,7 +34,7 @@ jobs:
       run: npm run build
 
     - name: Remove template files
-      run: rm -rf node_modules public scripts src index.html package*
+      run: rm -rf node_modules public src index.html package*
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
